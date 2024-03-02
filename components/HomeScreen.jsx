@@ -89,6 +89,7 @@ export default function HomeScreen() {
 
   return (
     <ScrollView contentContainerStyle={styles.scrollView} horizontal={false}>
+      <Text style={styles.headingcountry}>Countries Details</Text>
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
@@ -366,5 +367,12 @@ const styles = StyleSheet.create({
   showMoreText: {
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  headingcountry: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center', // Center text horizontally
+    alignItems: 'center', // Center text vertically
   },
 });
